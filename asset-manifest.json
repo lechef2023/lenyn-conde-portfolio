@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lenyn-conde-portfolio/static/css/main.39c08217.css",
+    "main.js": "/lenyn-conde-portfolio/static/js/main.1499a171.js",
+    "index.html": "/lenyn-conde-portfolio/index.html",
+    "main.39c08217.css.map": "/lenyn-conde-portfolio/static/css/main.39c08217.css.map",
+    "main.1499a171.js.map": "/lenyn-conde-portfolio/static/js/main.1499a171.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39c08217.css",
+    "static/js/main.1499a171.js"
+  ]
+}
