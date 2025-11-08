@@ -247,3 +247,63 @@ footer {
     right: auto !important;
   }
 }
+
+/* Profile photo styling - CORRECTED & OPTIMIZED */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; /* 👈 Esto es clave: recorta cualquier parte que sobresalga */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco por si la imagen falla */
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  margin-left: auto; /* 👈 Añade esta línea */
+  margin-right: auto; /* 👈 Añade esta línea */
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+  object-position: center; /* Centra la imagen dentro del círculo */
+  border-radius: 50%; /* Aplica el borde redondo directamente a la imagen */
+  transition: transform 0.3s ease; /* Opcional: efecto hover */
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
+}
+
+/* Estilo para el placeholder de iniciales */
+.initials {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #1e3c72;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}

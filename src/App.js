@@ -1,15 +1,29 @@
 // src/App.js
 import React from 'react';
 import './App.css';
+import profilePhoto from './assets/profile-photo.png';
 
 function App() {
   return (
     <div className="App">
       {/* Hero Section */}
       <header className="hero">
-        <h1>Lenyn F. Conde L.</h1>
-        <p>Profesor de Matemáticas y Ciencias de la Computación | Desarrollador de Software Educativo | Innovador en Tecnología Educativa</p>
-        <a href="#contact" className="cta-button">¡Contáctame!</a>
+        <div className="hero-content">
+          <div className="profile-photo">
+            <img
+              src={profilePhoto}
+              alt="Lenyn Conde"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                const parent = e.target.parentElement;
+                parent.innerHTML = '<div class="initials">LC</div>';
+              }}
+            />
+          </div>
+          <h1>Lenyn F. Conde L.</h1>
+          <p>Profesor de Matemáticas y Ciencias de la Computación | Desarrollador de Software Educativo | Innovador en Tecnología Educativa</p>
+          <a href="#contact" className="cta-button">¡Contáctame!</a>
+        </div>
       </header>
 
       {/* About */}
@@ -35,45 +49,78 @@ function App() {
       <section className="section" id="experience">
         <h2 className="section-title">Experiencia Profesional</h2>
         <div className="timeline">
+          {/* 1. Universidad de Carabobo */}
           <div className="timeline-item">
             <span className="date">Jul 2024 – Sep 2025</span>
             <h3>Docente Universitario – Matemáticas</h3>
             <p><strong>Universidad de Carabobo</strong></p>
             <ul>
-              <li>Impartición de clases de matemáticas a nivel superior.</li>
-              <li>Diseño de materiales didácticos y evaluaciones.</li>
-              <li>Uso de plataformas digitales para enseñanza híbrida.</li>
+              <li>Impartición de clases de matemáticas a nivel superior, enfocadas en el desarrollo del pensamiento lógico-matemático.</li>
+              <li>Diseño de materiales didácticos y aplicación de evaluaciones alineadas con objetivos de aprendizaje.</li>
+              <li>Uso de plataformas digitales para la enseñanza híbrida y seguimiento del rendimiento estudiantil.</li>
             </ul>
           </div>
 
+          {/* 2. Motobombas, C.A. */}
           <div className="timeline-item">
             <span className="date">Ene 2021 – Abr 2025</span>
             <h3>Programación y RRSS</h3>
             <p><strong>Motobombas, C.A.</strong></p>
             <ul>
-              <li>Desarrollo y mantenimiento de aplicaciones internas.</li>
+              <li>Desarrollo y mantenimiento de aplicaciones de software interno.</li>
               <li>Creación de contenido audiovisual para redes sociales.</li>
-              <li>Implementación de soluciones tecnológicas.</li>
+              <li>Implementación de soluciones tecnológicas para mejorar procesos.</li>
             </ul>
           </div>
 
+          {/* 3. Aliadas en Cadena, C.A. */}
           <div className="timeline-item">
             <span className="date">Sep 2021 – Dic 2022</span>
-            <h3>Instructor de Habilidades Digitales</h3>
+            <h3>Instructor de Habilidades Digitales y Ofimática</h3>
             <p><strong>Aliadas en Cadena, C.A.</strong></p>
             <ul>
-              <li>Talleres de ofimática y competencias digitales.</li>
-              <li>Metodologías activas y aprendizaje basado en proyectos.</li>
+              <li>Diseño e impartición de talleres prácticos en el uso de herramientas informáticas y programas de ofimática.</li>
+              <li>Enseñanza de competencias digitales esenciales: manejo de documentos, hojas de cálculo, presentaciones y correo electrónico.</li>
+              <li>Apoyo en la alfabetización digital de empleados para mejorar su productividad y autonomía tecnológica.</li>
+              <li>Uso de metodologías activas y aprendizaje basado en proyectos para facilitar la retención del conocimiento.</li>
             </ul>
           </div>
 
+          {/* 4. ✅ Kromi Market, C.A. — POSICIÓN CORRECTA */}
+          <div className="timeline-item">
+            <span className="date">Sep 2013 – Ene 2017</span>
+            <h3>Ayudante Operativo de Electrónica</h3>
+            <p><strong>Kromi Market, C.A.</strong></p>
+            <ul>
+              <li>Atención al cliente en la venta y asesoría técnica de electrodomésticos y equipos electrónicos.</li>
+              <li>Soporte en la instalación, configuración y solución de dudas básicas sobre productos de consumo electrónico.</li>
+              <li>Gestión de inventario, exhibición de productos y apoyo en labores operativas del área de electrónica.</li>
+              <li>Registro de ventas y seguimiento de garantías mediante sistemas internos de la tienda.</li>
+            </ul>
+          </div>
+
+          {/* 5. U.E. “José Humberto Quintero” */}
+          <div className="timeline-item">
+            <span className="date">Sep 2012 – Jul 2013</span>
+            <h3>Docente de Matemáticas – Nivel Secundario</h3>
+            <p><strong>U.E. “José Humberto Quintero”</strong></p>
+            <ul>
+              <li>Enseñanza de matemáticas a estudiantes de educación media.</li>
+              <li>Aplicación de estrategias pedagógicas para facilitar la comprensión de conceptos complejos.</li>
+              <li>Evaluación continua y seguimiento del rendimiento académico.</li>
+            </ul>
+          </div>
+
+          {/* 6. Atento de Venezuela, S.A. */}
           <div className="timeline-item">
             <span className="date">Sep 2010 – Ene 2012</span>
-            <h3>Ejecutivo de Soporte Técnico</h3>
+            <h3>Ejecutivo de Soporte Técnico – Telecomunicaciones</h3>
             <p><strong>Atento de Venezuela, S.A.</strong></p>
             <ul>
-              <li>Soporte en conectividad y diagnóstico remoto.</li>
-              <li>Gestión de incidencias en CRM.</li>
+              <li>Atención a clientes en temas de conectividad y rendimiento de internet.</li>
+              <li>Diagnóstico y resolución remota de fallas técnicas (redes, modems, routers).</li>
+              <li>Registro y seguimiento de incidencias en sistemas CRM.</li>
+              <li>Soporte en configuración de dispositivos y servicios de banda ancha.</li>
             </ul>
           </div>
         </div>
@@ -110,7 +157,8 @@ function App() {
             'Programación', 'Diseño de Contenidos', 'Soporte Técnico',
             'E-learning', 'Aplicaciones Educativas', 'Microsoft Office',
             'Google Workspace', 'Pensamiento Lógico-Matemático',
-            'Enseñanza Virtual', 'React', 'JavaScript'
+            'Enseñanza Virtual', 'React', 'JavaScript', 'Redes Básicas',
+            'Mantenimiento de Hardware'
           ].map((skill, i) => (
             <span key={i} className="skill-tag">{skill}</span>
           ))}
