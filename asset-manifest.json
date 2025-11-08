@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/lenyn-conde-portfolio/static/css/main.39c08217.css",
-    "main.js": "/lenyn-conde-portfolio/static/js/main.1499a171.js",
+    "main.css": "/lenyn-conde-portfolio/static/css/main.8a94e11b.css",
+    "main.js": "/lenyn-conde-portfolio/static/js/main.2ccfa8a3.js",
+    "static/media/profile-photo.png": "/lenyn-conde-portfolio/static/media/profile-photo.247533e9f1e5c159cc83.png",
     "index.html": "/lenyn-conde-portfolio/index.html",
-    "main.39c08217.css.map": "/lenyn-conde-portfolio/static/css/main.39c08217.css.map",
-    "main.1499a171.js.map": "/lenyn-conde-portfolio/static/js/main.1499a171.js.map"
+    "main.8a94e11b.css.map": "/lenyn-conde-portfolio/static/css/main.8a94e11b.css.map",
+    "main.2ccfa8a3.js.map": "/lenyn-conde-portfolio/static/js/main.2ccfa8a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.39c08217.css",
-    "static/js/main.1499a171.js"
+    "static/css/main.8a94e11b.css",
+    "static/js/main.2ccfa8a3.js"
   ]
 }
