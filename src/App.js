@@ -49,7 +49,19 @@ function App() {
       <section className="section" id="experience">
         <h2 className="section-title">Experiencia Profesional</h2>
         <div className="timeline">
-          {/* 1. Universidad de Carabobo */}
+          {/* 1. U.E. Maestro Luis Beltrán Prieto Figueroa — NUEVO TRABAJO MÁS RECIENTE */}
+          <div className="timeline-item">
+            <span className="date">Dic 2025 – Presente</span>
+            <h3>Docente de Matemáticas – Nivel Secundario</h3>
+            <p><strong>U.E. Maestro Luis Beltrán Prieto Figueroa</strong></p>
+            <ul>
+              <li>Enseñanza de matemáticas a estudiantes de educación media.</li>
+              <li>Aplicación de estrategias pedagógicas para facilitar la comprensión de conceptos complejos.</li>
+              <li>Evaluación continua y seguimiento del rendimiento académico.</li>
+            </ul>
+          </div>
+
+          {/* 2. Universidad de Carabobo */}
           <div className="timeline-item">
             <span className="date">Jul 2024 – Sep 2025</span>
             <h3>Docente Universitario – Matemáticas</h3>
@@ -61,7 +73,7 @@ function App() {
             </ul>
           </div>
 
-          {/* 2. Motobombas, C.A. */}
+          {/* 3. Motobombas, C.A. */}
           <div className="timeline-item">
             <span className="date">Ene 2021 – Abr 2025</span>
             <h3>Programación y RRSS</h3>
@@ -73,7 +85,7 @@ function App() {
             </ul>
           </div>
 
-          {/* 3. Aliadas en Cadena, C.A. */}
+          {/* 4. Aliadas en Cadena, C.A. */}
           <div className="timeline-item">
             <span className="date">Sep 2021 – Dic 2022</span>
             <h3>Instructor de Habilidades Digitales y Ofimática</h3>
@@ -86,7 +98,7 @@ function App() {
             </ul>
           </div>
 
-          {/* 4. ✅ Kromi Market, C.A. — POSICIÓN CORRECTA */}
+          {/* 5. Kromi Market, C.A. */}
           <div className="timeline-item">
             <span className="date">Sep 2013 – Ene 2017</span>
             <h3>Ayudante Operativo de Electrónica</h3>
@@ -99,7 +111,7 @@ function App() {
             </ul>
           </div>
 
-          {/* 5. U.E. “José Humberto Quintero” */}
+          {/* 6. U.E. “José Humberto Quintero” */}
           <div className="timeline-item">
             <span className="date">Sep 2012 – Jul 2013</span>
             <h3>Docente de Matemáticas – Nivel Secundario</h3>
@@ -111,7 +123,7 @@ function App() {
             </ul>
           </div>
 
-          {/* 6. Atento de Venezuela, S.A. */}
+          {/* 7. Atento de Venezuela, S.A. */}
           <div className="timeline-item">
             <span className="date">Sep 2010 – Ene 2012</span>
             <h3>Ejecutivo de Soporte Técnico – Telecomunicaciones</h3>
